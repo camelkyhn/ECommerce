@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce.Storage.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20201114211306_Initial_Migration")]
+    [Migration("20201114222127_Initial_Migration")]
     partial class Initial_Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,8 +247,7 @@ namespace ECommerce.Storage.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(256);
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Status")
                         .HasColumnType("INTEGER");

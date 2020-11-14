@@ -16,7 +16,6 @@ namespace ECommerce.Middleware.Entities.Identity
         public string Email { get; set; }
 
         [Required]
-        [StringLength(256, MinimumLength = 1)]
         public string Password { get; set; }
 
         public virtual ICollection<UserRole> UserRoles { get; set; }
