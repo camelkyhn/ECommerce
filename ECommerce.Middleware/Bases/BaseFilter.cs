@@ -29,7 +29,7 @@ namespace ECommerce.Middleware.Bases
 
         public DateTime? DateAfter { get; set; }
 
-        public string UpdatedUserMahlas { get; set; }
+        public string UpdatedUserName { get; set; }
 
         public Status? Status { get; set; }
     }
